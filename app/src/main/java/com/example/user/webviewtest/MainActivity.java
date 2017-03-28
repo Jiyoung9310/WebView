@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setLightTouchEnabled(true);
         webView.getSettings().setSavePassword(true); //폼 데이터 중 패스워드의 저장 여부를 설정
         webView.getSettings().setSaveFormData(true); //폼데이터의 저장 여부를 설정
+        webView.getSettings().setUseWideViewPort(true);
+        webView.getSettings().setSupportZoom(true);
+        webView.getSettings().setBuiltInZoomControls(true);
 
         webView.setWebViewClient(new MyWebViewClient());
 
